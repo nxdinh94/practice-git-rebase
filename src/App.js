@@ -1,23 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [input, setInput] = useState("");
+
+  const handleClick = (value) => {
+    setInput((prev) => prev + value);
+  };
+
+  const clearInput = () => {
+    setInput("");
+  };
+
+  const calculateResult = () => {
+    try {
+      setInput(eval(input).toString());
+    } catch {
+      setInput("Error");
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="calculator">
+      <div className="display">{input || "0"}</div>
+      <div className="buttons">
+        {["7", "8", "9", "/"].map((item) => (
+          <button key={item} onClick={() => handleClick(item)}>
+            {item}
+          </button>
+        ))}
+        {["4", "5", "6", "*"]?.map((item) => (
+          <button key={item} onClick={() => handleClick(item)}>
+            {item}
+          </button>
+        ))}
+        {["1", "2", "3", "-"]?.map((item) => (
+          <button key={item} onClick={() => handleClick(item)}>
+            {item}
+          </button>
+        ))}
+        {["0", ".", "+", "="]?.map((item) => (
+          <button
+            key={item}
+            onClick={() =>
+              item === "=" ? calculateResult() : handleClick(item)
+            }
+          >
+            {item}
+          </button>
+        ))}
+        <button className="clear" onClick={clearInput}>
+          C
+        </button>
+      </div>
     </div>
   );
 }

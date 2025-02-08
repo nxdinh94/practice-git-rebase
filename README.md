@@ -36,4 +36,4 @@ and the graph will show
 
 
 # Fast-forward merge happen when merge another branch while current branch have no commit
-git commit --amend -m "Added lines to README.md"
+# prevent fast-forward merge : git merge <some_branch> --no-ff

@@ -11,3 +11,4 @@
 i created a branch named [xuan_dinh_branches] at [basic_calculator] commit
 and then i push a commit named "add scss".
 when main branch have a new commit, i intergrate it into my [xuan_dinh_branches]
+and the graph will show 

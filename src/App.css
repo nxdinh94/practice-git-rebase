@@ -43,7 +43,7 @@
 
     .clear {
       grid-column: span 4;
-      background: #9695a6;
+      background: #1a1925;
 
       &:hover {
         background: #6b5f99;

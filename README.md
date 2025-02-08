@@ -8,3 +8,6 @@
 ## Step-04: Push changes to the new branch B. The below command will create a new branch B as well remotely
     git push origin B
 
+i created a branch named [xuan_dinh_branches] at [basic_calculator] commit
+and then i push a commit named "add scss".
+when main branch have a new commit, i intergrate it into my [xuan_dinh_branches]

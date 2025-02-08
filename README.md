@@ -33,3 +33,6 @@ and the graph will show
 - While git rebase undoubtedly keeps your commit history cleaner, there are a few things to be mindful of:
 - Use rebase only for local branches. Do not rebase branches others are working on. Rebase changes the commithistory, and others will not know about it.
 - Regularly fetch and rebase your local branches to stay up-to-date with the main branch. Conflicts become messy! Rebase early and often.
+
+
+# Fast-forward merge happen when merge another branch while current branch have no commit

@@ -45,7 +45,7 @@
       grid-column: span 4;
       background: #493dce;
       /* comment 3 */
-
+      /* git revert */
       &:hover {
         background: #6d6c72;
       }

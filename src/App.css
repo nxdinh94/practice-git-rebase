@@ -45,7 +45,7 @@
       grid-column: span 4;
       background: #493dce;
       /* comment 3 */
-      /* comment 4 */
+
       &:hover {
         background: #6d6c72;
       }

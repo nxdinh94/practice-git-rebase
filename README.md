@@ -38,6 +38,6 @@ and the graph will show
 # Fast-forward merge happen when merge another branch while current branch have no commit
 # prevent fast-forward merge : git merge <some_branch> --no-ff
 
-# main changed 3
+# main changed 4
 
 # feature branch changed
